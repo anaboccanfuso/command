@@ -1,10 +1,12 @@
 public class IDontKnowCommand implements Command {
-    public IDontKnowCommand(MilitaryCadence cadence) {
+    private MilitaryCadence cadence;
 
+    public IDontKnowCommand(MilitaryCadence cadence) {
+        this.cadence = cadence;
     }
 
     public void execute() {
-        
+        cadence.singIDontKnow();
     }
     
 }
