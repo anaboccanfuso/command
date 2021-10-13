@@ -1,15 +1,21 @@
 /**
  * A class to play specific song EverywhereWeGo
- * @author adam sanfacon
+ * @author Adam Sanfacon
  */
 public class EverywhereCommand implements Command{
-    //intializes cadence
     private MilitaryCadence cadence;
-    //constructor which defines cadence with the argument
+    
+    /**
+     * Constructor to create specific instance of the cadence.
+     * @param cadence The song to be sung. 
+     */
     public EverywhereCommand(MilitaryCadence cadence) {
         this.cadence = cadence;   
     }
-    //plays the song Everywhere We Go
+
+    /**
+     * Calls the Military Cadence class to print the cadence. 
+     */
     public void execute() {
         cadence.singEverywhereWeGo();
     }

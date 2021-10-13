@@ -1,15 +1,22 @@
 /**
- * A class to play specific song InArmy
- * @author adam sanfacon
+ * A class to print out the lyrics to In Army by calling
+ * the Military Cadence class.
+ * @author Adam Sanfacon
  */
 public class InArmyCommand implements Command {
-    //initializes cadence variable
     private MilitaryCadence cadence;
-    //constructor for class to define cadence
+    
+    /**
+     * Creates a specific instance of the cadence.
+     * @param cadence The song to be sung.
+     */
     public InArmyCommand(MilitaryCadence cadence) {
         this.cadence = cadence;
     }
-    //executes song 
+
+    /**
+     *  Calls the Military Cadence class to print the cadence.
+     */ 
     public void execute() {
         cadence.singInArmy();
     }
