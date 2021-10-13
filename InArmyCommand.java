@@ -1,9 +1,11 @@
 public class InArmyCommand implements Command {
-    public InArmyCommand(MilitaryCadence cadence) {
+    private MilitaryCadence cadence;
 
+    public InArmyCommand(MilitaryCadence cadence) {
+        this.cadence = cadence;
     }
 
     public void execute() {
-        
+        cadence.singInArmy();
     }
 }
